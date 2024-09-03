@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form</title>
+</head>
+<body style="background-color: aquamarine;">
+    <h1> <center>Job Application Form</center></h1>
+    <marquee direction="left" style="background-color: brown;">
+    <p><center style="color: aliceblue;">Please complete the form below to apply for a position with us.</center></p>
+</marquee>
+    <hr>
+    <h3 style="margin-left: 45%;"> <u>Personal Details</u></h3>
+    <from>
+    <p style="margin-left: 25%;"><b> Name:   
+    <f style="margin-left: 10%;"> 
+        <input type="text" placeholder="First Name" class="name">
+        <input type="text" placeholder="Middel Name " class="name"> 
+        <input type="text" placeholder="Last Name" class="name"> 
+        <p style="margin-left: 25%;"> <b>Email Id:
+        <f style="margin-left: 8%;">
+        <input type="email" placeholder="Email" class="text-name">
+    <p style="margin-left: 25%;">
+        <b> Phone No: 
+            <f style="margin-left: 7.2%;">
+            <input type="digits" placeholder="+91 00000-00000" class="number">
+            <p style="margin-left: 25%;">
+                <b>Date of birth:
+                    <f style="margin-left: 5%;">
+                    <input type="date" placeholder="dd" class="number">
+                    <p style="margin-left: 25%;">
+                        <b>Gander:
+                            <f style="margin-left: 8%;">
+                                <input type="radio" class="radio-button" name="r1">
+                                <label style="margin-right: 40px;">Male</label>
+                                <input type="radio" class="radio-button" name="r1">
+                                 <label>Female</label><br>
+        <h3 style="margin-left: 45%;"> <u> Current Address</u></h3>
+        <p style="margin-left: 25%;"><b> Street Address:   
+            <f style="margin-left: 3.6%;"> 
+                <input type="text" placeholder="Flot no/ street name" class="name">
+                <p style="margin-left: 25%;"><b>  Address line 2:   
+                    <f style="margin-left: 3.8%;"> 
+                        <input type="text" placeholder="Village Name" class="name">
+            <p style="margin-left: 25%;"><b> City / State:   
+            <f style="margin-left: 6%;"> 
+            <input type="text" placeholder="City Name" class="name">
+            <input type="text" placeholder="State Name" class="name">
+
+            <p style="margin-left: 25%;"><b> Pin Code:   
+                <f style="margin-left: 7.5%;"> 
+            <input type="number" placeholder="Pin Code" class="number">
+
+            <h3 style="margin-left: 45%;"> <u> Paramnent Address</u></h3>
+        <p style="margin-left: 25%;"><b> Street Address:   
+            <f style="margin-left: 3.6%;"> 
+                <input type="text" placeholder="Flot no/ street name" class="name">
+                <p style="margin-left: 25%;"><b>  Address line 2:   
+                    <f style="margin-left: 3.8%;"> 
+                        <input type="text" placeholder="Village Name" class="name">
+            <p style="margin-left: 25%;"><b> City / State:   
+            <f style="margin-left: 6%;"> 
+            <input type="text" placeholder="City Name" class="name">
+            <input type="text" placeholder="State Name" class="name">
+
+            <p style="margin-left: 25%;"><b> Pin Code:   
+                <f style="margin-left: 7.5%;"> 
+            <input type="digits" placeholder="Pin Code" class="number">
+            <p style="margin-left: 24.5%;">
+                <input type="radio" class="radio-button" name="r1">
+                 <label style="margin-right: 40px;">Same as Current Address</label>
+
+                 <h3 style="margin-left: 45%;"> <u>  Applying for job Position </u></h3>
+
+                <p style="margin-left: 25%;"><b> Position:
+                    <f style="margin-left: 7.9%;"> 
+
+                        <select class="Job Position">
+                            <option>Select Job Position</option>
+                            <option>Developer (Front-End)</option>
+                            <option>SQL (Developer)</option>
+                            <option>Full Satck Developer (Python)</option>
+                            <option>Testing (mannul/Automation)</option>
+                            <option>Finance</option>
+                        </select>
+
+                        <p style="margin-left: 25%;"><b> Avability of join:
+                            <f style="margin-left: 2%;"> 
+                                <select class="Avalibality">
+                                    <option>Avalibility</option>
+                                    <option>Immideate Joinner</option>
+                                    <option>15 days</option>
+                                    <option>1 Month </option>
+                                    </select>
+
+    <p style="margin-left: 25%;"><b> Salary:
+     <f style="margin-left: 9%;">
+        <input type="digits" placeholder="Current Salary" class="number">
+        <input type="digits" placeholder="Expected Salary" class="number">
+
+    <p style="margin-left: 25%;">
+        <b> How did you hear about us:
+                            <f style="margin-left: 2%;"> 
+                                <select class="pelase select">
+                                    <option>Select one</option>
+                                    <option>Company Job Portal</option>
+                                    <option>Google</option>
+                                    <option>Facebook </option>
+                                    <option>Employee Referances</option>
+                                    <option>Others</option>
+                                    </select>
+ <p style="margin-left: 25%;"><b> About you:
+    <f style="margin-left: 6.3%;">
+         <input type="text" placeholder="Tell me something about you" class="text">
+
+         <h3 style="margin-left: 45%;"> <u> Upload Resume </u></h3>
+         <p style="margin-left: 25%;"> <b> Select Resume:
+            <f style="margin-left: 3.7%;">
+         <f action="/submit_resume" method="post" enctype="multipart/form-data">
+            <input type="file" id="resumeUpload" name="resume" accept=".pdf, .doc, .docx">
+            <br>
+            <br>
+            <p style="margin-left: 50%;"> 
+            <button type="submit" style="background-color: blueviolet;">Submit</button>
+
+
+        </b> </p>
+</body>
+</html>
